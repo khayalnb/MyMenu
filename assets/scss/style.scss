@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$width-100-percent: 100%;
+$color-black:black;
+.header-box {
+    width: $width-100-percent;
+    outline: 1;
+    padding: 20px 0px;
+    
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        height: 48px;
+        margin-right: 1.5rem;
+    }
+    select {
+        border: none;
+        outline: none;
+        background-color: #FBFAFA;
+    }
+    .search-box{
+
+        input{
+            border: none;
+            outline: none;
+        }
+        
+    }
+    .login-register{
+        color: orangei{
+            margin-right: 5px;
+        }
+        :& i{
+            color: red;
+        }
+    }
+    
+}
+.navbar{
+   li{
+     list-style: none;
+     a{
+        text-decoration: none;
+        color: $color-black;
+    }
+   }
+    
+}
