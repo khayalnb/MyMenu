@@ -27,9 +27,35 @@
   outline: none;
   background-color: #FBFAFA;
 }
+.header-box .search-box {
+  width: 60%;
+  height: 36px;
+  background-color: #FBFAFA;
+  border-radius: 5px;
+}
 .header-box .search-box input {
+  height: 100%;
   border: none;
   outline: none;
+  border-radius: 5px;
+  min-width: 195px;
+  background-color: #FBFAFA;
+  margin-left: 2px;
+}
+.header-box .search-box input::-moz-placeholder {
+  color: #7E7E7E;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+.header-box .search-box input:-ms-input-placeholder {
+  color: #7E7E7E;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+.header-box .search-box input::placeholder {
+  color: #7E7E7E;
+  font-size: 12.5px;
+  font-weight: 400;
 }
 .header-box .login-register {
   color: #E85826;
@@ -116,6 +142,57 @@ nav {
   transform: scale(1.05);
 }
 
+article a {
+  text-decoration: none;
+  color: #E85826;
+  font-weight: bold;
+}
+article .foot-card .img-box {
+  width: 125px;
+  height: 125px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+article .foot-card .img-box img {
+  width: 125px;
+  height: 125px;
+  border-radius: 5px;
+}
+article .foot-card .f-c-body p {
+  color: #7E7E7E;
+}
+article .subscribe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-image: url(../img/subscribe/home-regis.png);
+  background-position-y: bottom;
+  height: 436px;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.slider-part {
+  width: 100%;
+  height: 300px;
+  background-color: #F8F9FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-part .svg-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-part .svg-img img {
+  width: 40%;
+}
+
 footer {
   font-size: 15px;
 }
@@ -174,8 +251,7 @@ footer i {
 }
 
 @media screen and (max-width: 1600px) {
-  .coursel-box img {
-    width: 100%;
-    height: 590px;
+  .custom-shape-divider-bottom-1661330328 {
+    bottom: -1;
   }
 }

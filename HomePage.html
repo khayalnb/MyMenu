@@ -10,6 +10,9 @@
     <!--Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!--owl coeusel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--Custom Css link-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MyMenu</title>
@@ -31,12 +34,15 @@
                             <option value="EN">EN</option>
                         </select>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="search-box">
-                            <input type="search" name="" id="">
+                    <div class="col-sm-8 d-flex justify-content-center align-items-center" >
+                        <div class="search-box d-flex justify-content-center align-items-center">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass" style="color:#7E7E7E ;"></i>
+                                <input type="search" placeholder="Search restaurant and cafe name">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 d-flex jus">
+                    <div class="col-sm-2 d-flex justify-content-end align-items-center">
                         <a class="login-register" href="">Şəxsi kabinet <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -118,7 +124,7 @@
                 <div class="row cards-box">
                     <div class="col-sm-3">
                         <div class="card" style="width: 18rem; border: none;">
-                            <img src="assets/img/card image/qladvs4c.4is.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/card image/qladvs4c.4is.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="card-body">
                                 <h5 class="card-title">Chalet Steak & Wine House</h5>
                                 <p class="card-text">Tufandag Mountain Resort</p>
@@ -128,8 +134,8 @@
                         </div>
                     </div>
                     <div class="col-sm-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;border: none">
-                            <img src="assets/img/card image/nskxtjij.mhe.jpg" class="card-img-top" alt="...">
+                        <div class="card" style="width: 18rem;border: none" >
+                            <img src="assets/img/card image/nskxtjij.mhe.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Daniz Hotel</h5>
                                 <p class="card-text">Sahil str., Lankaran</p>
@@ -138,9 +144,29 @@
                             </div>
                         </div>
                     </div>
+                   
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <div class="col-sm-3 d-flex justify-content-center">
                         <div class="card" style="width: 18rem;border: none">
-                            <img src="assets/img/card image/3vgo5w2s.gyn.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/card image/3vgo5w2s.gyn.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="card-body">
                                 <h5 class="card-title">Chalet Steak & Wine House</h5>
                                 <p class="card-text">Bayan village, Oghuz</p>
@@ -151,7 +177,7 @@
                     </div>
                     <div class="col-sm-3 d-flex justify-content-end">
                         <div class="card" style="width: 18rem;border: none">
-                            <img src="assets/img/card image/download.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/card image/download.jpg" class="card-img-top" alt="..."data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="card-body">
                                 <h5 class="card-title">Chalet Steak & Wine House</h5>
                                 <p class="card-text">Okhud village, Shaki</p>
@@ -169,17 +195,21 @@
             </section>
             <article>
                 <div class="row">
-                    <div class="col-sm-5">
-                        t
+                    <div class="col-sm-12 d-flex justify-content-between align-items-center">
+                        <h2 class="d-inline-block">New Blogs</h2>
+                        <a href="">Show All News</a>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-sm-6 mb-5">
+                        
+                    </div>
+                    <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                                 <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="foot-card">
+                                    <div class="col-sm-12 mb-3">
+                                        <div class="foot-card d-flex">
                                             <div class="img-box">
-                                                <img src="" alt="">
+                                                <img src="assets/img/kabab.jpg" alt="">
                                             </div>
                                             <div class="f-c-body">
                                                 <h6>Kebabs</h6>
@@ -187,10 +217,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="foot-card">
+                                    <div class="col-sm-12 mb-3">
+                                        <div class="foot-card d-flex">
                                             <div class="img-box">
-                                                <img src="" alt="">
+                                                <img src="assets/img/dovga.jpg" alt="">
                                             </div>
                                             <div class="f-c-body">
                                                 <h6>Dovga</h6>
@@ -198,10 +228,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="foot-card">
+                                    <div class="col-sm-12 mb-3">
+                                        <div class="foot-card d-flex">
                                             <div class="img-box">
-                                                <img src="" alt="">
+                                                <img src="assets/img/cay.png" alt="">
                                             </div>
                                             <div class="f-c-body">
                                                 <h6>Tea</h6>
@@ -211,8 +241,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
+                                <div class="subscribe">
 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,6 +300,7 @@
             </section>
         </div>
     </main>
+    
     <footer>
 
         <div class="container">
@@ -313,6 +346,7 @@
 
     </footer>
 
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!--Aos JS Link-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Bootstrap JS Link -->

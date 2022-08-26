@@ -36,10 +36,26 @@ $color-orange: #E85826;
     }
 
     .search-box {
+        width: 60%;
+        height: 36px;
+        background-color: #FBFAFA;
+        border-radius: 5px;
 
         input {
+            height: 100%;
             border: none;
             outline: none;
+            border-radius: 5px;
+            min-width: 195px;
+
+            background-color: #FBFAFA;
+            margin-left: 2px;
+        }
+
+        input::placeholder {
+            color: $color-grey;
+            font-size: 12.5px;
+            font-weight: 400;
         }
 
     }
@@ -149,6 +165,63 @@ nav {
     }
 }
 
+article {
+    a {
+        text-decoration: none;
+        color: $color-orange;
+        font-weight: bold;
+    }
+
+    .foot-card {
+        .img-box {
+            width: 125px;
+            height: 125px;
+            border-radius: 5px;
+            margin-right: 20px;
+
+            img {
+                width: 125px;
+                height: 125px;
+                border-radius: 5px;
+            }
+        }
+
+        .f-c-body {
+            p {
+                color: $color-grey;
+            }
+        }
+    }
+
+    .subscribe {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background-image: url(../img/subscribe/home-regis.png);
+        background-position-y: bottom;
+        height: 436px;
+        background-size: cover;
+        position: relative;
+        z-index: 10
+    }
+}
+.slider-part {
+    width: 100%;
+    height: 300px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+    .slider-part .svg-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+      .slider-part .svg-img img {
+        width: 40%;
+       }
 footer {
     font-size: 15px;
 
@@ -212,15 +285,16 @@ footer {
         align-items: center;
         width: 150px;
     }
-    img{
-    height: 120px;
-    };
+
+    img {
+        height: 120px;
+    }
+
+
 }
-@media screen and (max-width: 1600px){
-    .coursel-box {
-        img {
-            width: 100%;
-            height: 590px;
-        }
+
+@media screen and (max-width: 1600px) {
+    .custom-shape-divider-bottom-1661330328 {
+        bottom: -1;
     }
 }
